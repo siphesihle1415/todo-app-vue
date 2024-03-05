@@ -62,7 +62,7 @@ export const useTodosStore = defineStore('todos', {
     },
     fetchTodos() {
       const that = this
-      fetch('http://192.168.56.1:9200/data/todoapp/v1/todos', {
+      fetch('http://192.168.56.1:9200/data/todo/v1/todos', {
         method: 'GET',
         headers: {
           Accept: 'application/json',
