@@ -57,7 +57,7 @@ function onScroll(event) {
   const container = scrollbar.value.$el
 
   if (scrollPos > 0) {
-    if (scrollPos + scrollbar.value.ps.containerHeight >= container.scrollHeight) {
+    if (scrollPos + scrollbar.value.ps.containerHeight >= container.scrollHeight - 1) {
       if (container.scrollHeight > scrollbar.value.ps.containerHeight) {
         toggleClass(container, "shadow-bottom", "remove")
         toggleClass(container, "both", "remove") 
